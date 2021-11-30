@@ -1,0 +1,52 @@
+// Desktop
+//Pour mettre un bouton avec une border en dégradé : 
+// <button class="input-nav"><span>Texte</span></button>
+.input-nav
+{
+    background: $degradeVioletBleu;
+    padding: 2px;
+    border : none;
+    outline: none;
+    box-shadow: 2px 3px 5px $gris;
+    border-radius : 50px;
+    span{
+        background: $blanc;
+        font-family: $fontFamilyText;
+        font-size: $fontSizeNav;
+        display: inline-block;
+        border-radius : 50px;
+        padding :1em 2em 1em 2em;
+        transition : all 0.4s ;
+        cursor: pointer;
+        font-weight: 500;
+        &:hover{
+            background: transparent;
+            color : $blanc;
+            
+        }
+    }
+    
+}
+.input-nav.-orange
+{
+    background: $degradeJauneRouge;
+    border-radius: 0;
+    span{
+        border-radius: 0;
+    }
+    
+}
+
+.input-nav.-decouvrir{
+    background: $violet;
+    padding: 1px;
+    span{
+        background: $violet;
+        color: $blanc;
+        &:hover{
+            background-color: $violetfonce;
+        }
+    }
+}
+
+
