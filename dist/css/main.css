@@ -46,3 +46,24 @@ body {
   color: white;
   border-bottom: #4c14e9 3px solid;
 }
+
+.header__imgbcg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 71px;
+  left: 0;
+}
+.header__chapo {
+  position: relative;
+  z-index: 2;
+  top: 1rem;
+  left: 5rem;
+}
+.header__chaussure {
+  position: relative;
+  z-index: 3;
+}
+.header h1, .header p {
+  color: white;
+}

@@ -1,0 +1,23 @@
+.header{
+    &__imgbcg{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top:71px;
+        left: 0;
+    }
+    &__chapo{
+        position: relative;
+        z-index: 2;
+        top: 1rem;
+        left: 5rem;
+    }
+    &__chaussure{
+        position: relative;
+        z-index: 3;
+    }
+    
+    h1,p{
+        color: $blanc;
+    }
+}
