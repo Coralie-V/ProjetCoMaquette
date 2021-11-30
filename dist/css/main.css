@@ -1,23 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Outfit;
-  src: url("/src/scss/components/fonts/Outfit-Regular.ttf");
-}
-@font-face {
-  font-family: Staatliches;
-  src: url("/src/scss/components/fonts/Staatliches-Regular.ttf");
-}
 p {
-  font-family: Outfit, arial;
+  font-family: "Outfit", sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: Staatliches, arial;
+  font-family: "Staatliches", sans-serif;
 }
 
 body {
@@ -35,7 +29,7 @@ body {
 }
 .nav__list {
   padding: 1.5em 3em;
-  font-family: Outfit, arial;
+  font-family: "Outfit", sans-serif;
 }
 .nav__list:hover {
   border-bottom: #4c14e9 3px solid;
@@ -51,7 +45,9 @@ body {
   position: absolute;
   z-index: 1;
   width: 100%;
+  height: 100vh;
   top: 71px;
+  object-fit: cover;
   left: 0;
 }
 .header__chapo {
@@ -60,12 +56,25 @@ body {
   top: 1rem;
   left: 5rem;
 }
+.header__chapo h1 {
+  width: 350px;
+}
 .header__chaussure {
   position: relative;
   z-index: 3;
 }
+.header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: normal;
+}
+.header p {
+  font-family: "Outfit", sans-serif;
+}
 .header h1, .header p {
   color: white;
+}
+.header p:nth-of-type(2) {
+  font-size: 2rem;
 }
 
 footer {
@@ -80,7 +89,7 @@ footer ul {
   list-style-type: none;
 }
 footer a {
-  font-family: Outfit, arial;
+  font-family: "Outfit", sans-serif;
   color: white;
   text-decoration: none;
 }
