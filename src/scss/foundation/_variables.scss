@@ -1,36 +1,32 @@
-@font-face {
-  font-family: Outfit;
-  src: url("/src/scss/components/fonts/Outfit-Regular.ttf");
-}
 
-@font-face {
-  font-family: Staatliches;
-  src: url("/src/scss/components/fonts/Staatliches-Regular.ttf");
-}
+
 // Les typographies
-
-$fontFamilyText: Outfit, arial;
-$fontFamilyTitre: Staatliches, arial;
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
+$fontFamilyText: 'Outfit', sans-serif;
+$fontFamilyTitre: 'Staatliches', sans-serif;
 
 // Tailles de typographiques desktop
 
-$fontSizeH1: 56pt;
-$fontSizeH2: 40pt;
-$fontSizeText: 14pt;
-$fontSizeNav: 16pt;
+$fontSizeH1: 56px;
+$fontSizeH2: 40px;
+$fontSizeText: 14px;
+$fontSizeNav: 16px;
 
 // Les couleurs
 
-$gris: #f4f4f4;
+$grisclair: #F4F4F4;
+$gris :rgb(134, 134, 134);
 $blanc: white;
-$bleuFonce: #4c14e9;
-$bleuClair: #398def;
-$noir: #000000;
-$rouge: #eb3e3e;
-$orange: #f47e3c;
-$jaune: #fddc2f;
-$vert: #34a853;
-$violet: #8318c7;
-$degradeVioletBleu: "linear-gradient(90deg, rgba(198,40,174,1) 0%, rgba(76,20,233,1) 100%)";
-$degradeJauneRouge: "inear-gradient(90deg, rgba(243,225,56,1) 8%, rgba(235,145,62,1) 55%, rgba(233,52,52,1) 100%)";
-$degradeBleuRoseRouge: "linear-gradient(90deg, rgba(28,212,252,1) 0%, rgba(198,40,174,1) 44%, rgba(232,25,25,1) 100%)";
+$bleuFonce : #4C14E9;
+$bleuClair: #398DEF;
+$noir : #000000;
+$rouge: #EB3E3E;
+$orange: #F47E3C;
+$jaune : #FDDC2F;
+$vert : #34A853;
+$violet: #8418c7;
+$violetfonce : #591e7e;
+$degradeVioletBleu : linear-gradient(90deg, rgba(198,40,174,1) 0%, rgba(76,20,233,1) 100%);
+$degradeJauneRouge : linear-gradient(90deg, rgba(243,225,56,1) 8%, rgba(235,145,62,1) 55%, rgba(233,52,52,1) 100%);
+$degradeBleuRoseRouge : linear-gradient(90deg, rgba(28,212,252,1) 0%, rgba(198,40,174,1) 44%, rgba(232,25,25,1) 100%);

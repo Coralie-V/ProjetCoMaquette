@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+.input-nav {
+  background: linear-gradient(90deg, #c628ae 0%, #4c14e9 100%);
+  padding: 2px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 3px 5px #868686;
+  border-radius: 50px;
 body {
   margin: 0;
 }
@@ -12,18 +21,48 @@ body {
   font-family: Outfit;
   src: url("/src/scss/components/fonts/Outfit-Regular.ttf");
 }
-@font-face {
-  font-family: Staatliches;
-  src: url("/src/scss/components/fonts/Staatliches-Regular.ttf");
+.input-nav span {
+  background: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 1em 2em 1em 2em;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-weight: 500;
 }
-p {
-  font-family: Outfit, arial;
+.input-nav span:hover {
+  background: transparent;
+  color: white;
 }
 
-h1,
-h2,
-h3 {
-  font-family: Staatliches, arial;
+.input-nav.-orange {
+  background: linear-gradient(90deg, #f3e138 8%, #eb913e 55%, #e93434 100%);
+  border-radius: 0;
+}
+.input-nav.-orange span {
+  border-radius: 0;
+}
+
+.input-nav.-decouvrir {
+  background: #8418c7;
+  padding: 1px;
+}
+.input-nav.-decouvrir span {
+  background: #8418c7;
+  color: white;
+}
+.input-nav.-decouvrir span:hover {
+  background-color: #591e7e;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Staatliches", sans-serif;
 }
 
 a #logo {
@@ -81,12 +120,19 @@ span.nav__icon__line {
   align-items: center;
   margin-bottom: 0px;
 }
+.nav__list {
+  padding: 1.5em 3em;
+  font-family: "Outfit", sans-serif;
+  cursor: pointer;
+  border-bottom: #4C14E9 3px solid;
 .nav .nav__group .nav__list a {
   margin: 0.2rem;
   padding: 0.5rem 0.5rem;
   transition: 0.2s;
   color: #000000;
 }
+.nav__list:hover {
+  border-bottom: #4C14E9 3px solid;
 .nav .nav__icon {
   position: relative;
   padding: 26px 10px;
@@ -126,6 +172,10 @@ span.nav__icon__line {
   background: #272727;
 }
 
+.nav__list.--login {
+  background-color: #4C14E9;
+  color: white;
+  border-bottom: #4C14E9 3px solid;
 @media screen and (max-width: 800px) {
   span.nav__icon__line {
     display: block !important;
@@ -214,6 +264,86 @@ span.nav__icon__line {
   .--login #--login {
     background-color: #4c14e9;
     color: white !important;
+  }
+}
+
+.header__imgbcg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  top: 71px;
+  object-fit: cover;
+  left: 0;
+}
+.header__chapo {
+  position: relative;
+  z-index: 2;
+  top: 1rem;
+  left: 5rem;
+}
+.header__chapo h1 {
+  width: 350px;
+}
+.header__chaussure {
+  position: relative;
+  z-index: 3;
+}
+.header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: normal;
+}
+.header p {
+  font-family: "Outfit", sans-serif;
+}
+.header h1, .header p {
+  color: white;
+}
+.header p:nth-of-type(2) {
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #000000;
+  width: 100%;
+  padding-bottom: 10px;
+}
+footer .footer__group {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer a {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+footer .footer__group.-reseau {
+  justify-content: center;
+}
+footer .footer__list.-reseau {
+  padding-left: 45px;
+}
+
+@media (max-width: 768px) {
+  footer .footer__group {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer__list {
+    padding-top: 18px;
+  }
+  footer .footer__group.-reseau {
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .footer__list.-reseau {
+    padding-left: 18px;
   }
 }
 @keyframes openTop {
