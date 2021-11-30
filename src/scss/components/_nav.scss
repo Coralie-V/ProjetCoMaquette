@@ -25,7 +25,5 @@ body {
 .nav__list.--login {
   background-color: $bleuFonce;
   color: $blanc;
-  &:hover {
-    border: none;
-  }
+  border-bottom: $bleuFonce 3px solid;
 }

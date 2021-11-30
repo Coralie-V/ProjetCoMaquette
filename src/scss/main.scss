@@ -1,16 +1,16 @@
-*, *::before, *::after
-{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+@import "./foundation/variables";
+@import "./foundation/mixins";
 
+@import "./elements/button";
+@import "./elements/text";
+@import "./elements/title";
 
-@import './foundation/variables';
-
-
-
-@import './elements/text';
-@import './elements/title';
-
-@import './components/nav';
-
+@import "./components/nav";
+@import "./components/header";
+@import "./components/footer";
