@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 @font-face {
   font-family: Outfit;
   src: url("/src/scss/components/fonts/Outfit-Regular.ttf");
@@ -22,29 +26,253 @@ h3 {
   font-family: Staatliches, arial;
 }
 
-body {
-  margin: 0;
+a #logo {
+  width: 10rem;
+}
+
+.--login {
+  background-color: #4c14e9;
+}
+.--login a {
+  color: white !important;
+}
+
+li.nav__list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+span.nav__icon__line {
+  display: none !important;
+}
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  color: #fff;
 }
 
 .nav {
-  background-color: white;
-}
-.nav__group {
-  margin: 0;
-  list-style: none;
+  position: fixed;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  z-index: 1;
+  transition: 0.4s ease-out;
+  background: #fff;
 }
-.nav__list {
-  padding: 1.5em 3em;
-  font-family: Outfit, arial;
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
 }
-.nav__list:hover {
-  border-bottom: #4c14e9 3px solid;
+.nav .nav__group {
+  margin-top: 0;
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.nav .nav__group .nav__list a {
+  margin: 0.2rem;
+  padding: 0.5rem 0.5rem;
+  transition: 0.2s;
+  color: #000000;
+}
+.nav .nav__icon {
+  position: relative;
+  padding: 26px 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.nav .nav__icon__line {
+  display: block;
+  position: relative;
+  background: #000;
+  height: 2px;
+  width: 20px;
+  border-radius: 4px;
+}
+.nav .nav__icon__line::before, .nav .nav__icon__line::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background: #000;
+  transition: background 0.8s ease;
+}
+.nav .nav__icon__line::before {
+  transform: translateY(-5px);
+}
+.nav .nav__icon__line::after {
+  transform: translateY(5px);
+}
+.nav .nav__btn {
+  display: none;
+}
+.nav.scrolled {
+  color: #fff;
+}
+.nav.scrolled .nav__icon__line, .nav.scrolled .nav__icon__line::before, .nav.scrolled .nav__icon__line::after {
+  background: #272727;
 }
 
-.nav__list.--login {
-  background-color: #4c14e9;
-  color: white;
-  border-bottom: #4c14e9 3px solid;
+@media screen and (max-width: 800px) {
+  span.nav__icon__line {
+    display: block !important;
+  }
+
+  .nav a {
+    display: block;
+    margin: 0 auto;
+  }
+  .nav .nav__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+  }
+  .nav .nav__icon__line {
+    animation: closedMid 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .nav .nav__icon__line::before {
+    animation: closedTop 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .nav .nav__icon__line::after {
+    animation: closedBtm 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .nav .nav__group {
+    transition: 0.3s;
+    background-color: #fff;
+    transform: translateX(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10rem 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2rem;
+  }
+  .nav .nav__group .nav__list {
+    opacity: 0;
+    transform: translateX(100%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .nav .nav__group .nav__list a {
+    display: block;
+    padding: 2rem 2rem;
+  }
+  .nav .nav__btn:checked ~ .nav__group {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .nav .nav__btn:checked ~ .nav__group .nav__list {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: 0.3s;
+    transition: opacity 0.4s ease-in-out;
+  }
+  .nav .nav__btn:checked ~ .nav__icon {
+    border-radius: 50%;
+    animation: pulse 1s;
+  }
+  .nav .nav__btn:checked ~ .nav__icon .nav__icon__line {
+    background: #272727;
+    animation: openMid 0.8s forwards;
+  }
+  .nav .nav__btn:checked ~ .nav__icon .nav__icon__line::before {
+    background: #272727;
+    animation: openTop 0.8s forwards;
+  }
+  .nav .nav__btn:checked ~ .nav__icon .nav__icon__line::after {
+    background: #272727;
+    animation: openBtm 0.8s forwards;
+  }
+
+  .--login {
+    background-color: #fff;
+  }
+  .--login #--login {
+    background-color: #4c14e9;
+    color: white !important;
+  }
+}
+@keyframes openTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes closedTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes openMid {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes closedMid {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes openBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes closedBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
 }
