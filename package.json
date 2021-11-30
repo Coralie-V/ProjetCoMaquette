@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Coralie-V/ProjetCoMaquette#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.44.0"
   },
   "dependencies": {
     "gulp.sass": "^1.3.9"
