@@ -1,29 +1,29 @@
-body{
+body {
+  margin: 0;
+}
+.nav {
+  background-color: white;
+
+  &__group {
     margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    padding: 1.5em 3em;
+    font-family: $fontFamilyText;
+    border-bottom: $bleuFonce 3px solid;
+    &:hover {
+      border-bottom: $bleuFonce 3px solid;
+    }
+  }
 }
-.nav{
-    background-color: white;
-
-    &__group{
-        margin: 0;
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    &__list{
-        padding: 1.5em 3em;
-        font-family: $fontFamilyText;
-
-        &:hover{
-            border-bottom: $bleuFonce 3px solid;
-        }
-    }
-}
-.nav__list.--login{
-    background-color: $bleuFonce;
-    color: $blanc;
-    &:hover{
-        border:none;
-    }
+.nav__list.--login {
+  background-color: $bleuFonce;
+  color: $blanc;
+  &:hover {
+    border: none;
+  }
 }
