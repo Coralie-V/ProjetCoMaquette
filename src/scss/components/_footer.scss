@@ -1,0 +1,31 @@
+footer{
+    background-color:black;
+
+        .footer__group{
+            display:flex;
+            justify-content: space-around;
+            padding-top:2%;
+        }
+
+
+        ul {
+            list-style-type: none;
+        }
+    
+    
+        a{
+            font-family: $fontFamilyText;
+            color:white;
+            text-decoration: none;
+        }
+
+        .footer__group.-reseau{
+            justify-content: center;
+        }
+
+
+        .footer__list.-reseau{
+            padding-right:45px;
+            padding-left:45px;
+        }
+}
