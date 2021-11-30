@@ -1,22 +1,16 @@
-@font-face {
-  font-family: Outfit;
-  src: url("/src/scss/components/fonts/Outfit-Regular.ttf");
-}
 
-@font-face {
-  font-family: Staatliches;
-  src: url("/src/scss/components/fonts/Staatliches-Regular.ttf");
-}
+
 // Les typographies
-
-$fontFamilyText: Outfit, arial;
-$fontFamilyTitre: Staatliches, arial;
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
+$fontFamilyText: 'Outfit', sans-serif;
+$fontFamilyTitre: 'Staatliches', sans-serif;
 
 // Tailles de typographiques desktop
 
-$fontSizeH1: 56pt;
-$fontSizeH2: 40pt;
-$fontSizeText: 14pt;
+$fontSizeH1: 56px;
+$fontSizeH2: 40px;
+$fontSizeText: 14px;
 $fontSizeNav: 16px;
 
 // Les couleurs
