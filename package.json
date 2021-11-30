@@ -1,0 +1,25 @@
+{
+  "name": "projetcomaquette",
+  "version": "1.0.0",
+  "description": "ProjetCoMaquette",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coralie-V/ProjetCoMaquette.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coralie-V/ProjetCoMaquette/issues"
+  },
+  "homepage": "https://github.com/Coralie-V/ProjetCoMaquette#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp.sass": "^1.3.9"
+  }
+}
