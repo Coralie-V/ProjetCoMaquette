@@ -46,3 +46,27 @@ body {
   color: white;
   border-bottom: #4c14e9 3px solid;
 }
+
+footer {
+  background-color: black;
+}
+footer .footer__group {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  font-family: Outfit, arial;
+  color: white;
+  text-decoration: none;
+}
+footer .footer__group.-reseau {
+  justify-content: center;
+}
+footer .footer__list.-reseau {
+  padding-right: 45px;
+  padding-left: 45px;
+}
