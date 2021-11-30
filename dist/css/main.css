@@ -26,7 +26,6 @@ body {
 .nav__list {
   padding: 1.5em 3em;
   font-family: Outfit, arial;
-  border-bottom: #4C14E9 3px solid;
 }
 .nav__list:hover {
   border-bottom: #4C14E9 3px solid;
@@ -35,6 +34,7 @@ body {
 .nav__list.--login {
   background-color: #4C14E9;
   color: white;
+  border-bottom: #4C14E9 3px solid;
 }
 .nav__list.--login:hover {
   border: none;
