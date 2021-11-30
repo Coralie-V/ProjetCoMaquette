@@ -61,8 +61,8 @@ span.nav__icon__line {
       border-bottom: 2px solid $blanc;
       a {
         margin: 0.2rem;
-        padding: 0.5rem 1rem;
-        transition: 0.2s;
+        padding: 0.2rem 2.5rem;
+
         color: $noir;
       }
       &:hover {
@@ -193,12 +193,14 @@ span.nav__icon__line {
         transform: translateX(0%);
         transition: 0.3s;
         transition: opacity 0.4s ease-in-out;
+        &:hover {
+          border-bottom: 2px solid $blanc;
+        }
       }
     }
 
     .nav__btn:checked ~ .nav__icon {
       border-radius: 50%;
-      animation: pulse 1s;
 
       .nav__icon__line {
         background: #272727;
@@ -217,6 +219,7 @@ span.nav__icon__line {
   }
   .--login {
     background-color: #fff;
+    border: 0px solid #fff !important;
 
     #--login {
       background-color: $bleuFonce;

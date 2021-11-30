@@ -22,6 +22,9 @@ header {
   p {
     font-family: $fontFamilyText;
   }
+  #price {
+    color: $jaune;
+  }
   h1,
   p {
     color: $blanc;
@@ -32,10 +35,10 @@ header {
 }
 
 .header__img {
-  width: 50%;
+  width: 37vw;
   display: block;
   margin: auto;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 #header__btn {
