@@ -13,16 +13,16 @@ body{
 
     &__list{
         padding: 1.5em 3em;
-        font-family: outfit;
-        
+        font-family: $fontFamilyText;
+
         &:hover{
-            border-bottom: #4C14E9 3px solid;
+            border-bottom: $bleuFonce 3px solid;
         }
     }
 }
 .nav__list.--login{
-    background-color: #4C14E9;
-    color: white;
+    background-color: $bleuFonce;
+    color: $blanc;
     &:hover{
         border:none;
     }
