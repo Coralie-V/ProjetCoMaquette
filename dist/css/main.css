@@ -66,8 +66,6 @@ h1, h2, h3 {
   font-family: "Staatliches", sans-serif;
 }
 
-a #logo {
-  width: 10rem;
 form {
   justify-content: center;
   display: flex;
@@ -83,8 +81,8 @@ form .section__input {
   border: red 3px solid;
 }
 
-body {
-  margin: 0;
+a #logo {
+  width: 10rem;
 }
 
 .--login {
@@ -340,35 +338,49 @@ span.nav__icon__line {
     transform: translateY(0px) rotate(90deg);
   }
 }
-.header {
+header {
   background-image: url("../../dist/images/header-bcg.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
-.header__chapo {
-  position: absolute;
-  z-index: 2;
-  top: 7rem;
-  left: 5rem;
+header .header_chapo {
+  padding: 0 5rem;
 }
-.header__chaussure {
+header .banner {
+  position: absolute;
+  top: 7rem;
+  width: 100%;
+}
+header__chaussure {
   position: relative;
   z-index: 3;
 }
-.header h1 {
+header h1 {
   font-family: "Staatliches", sans-serif;
   font-weight: normal;
 }
-.header p {
+header p {
   font-family: "Outfit", sans-serif;
 }
-.header h1,
-.header p {
+header h1,
+header p {
   color: white;
 }
-.header p:nth-of-type(2) {
+header p:nth-of-type(2) {
   font-size: 2rem;
+}
+
+.header__img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+#header__btn {
+  display: block;
+  margin: auto;
 }
 
 footer {
