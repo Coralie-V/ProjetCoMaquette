@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: Outfit;
+    src: url(components/fonts/Outfit-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Staatliches;
+    src: url(components/fonts/Staatliches-Regular.ttf);
+  }
+// Les typographies
+
+$fontFamilyText: Outfit, arial;
+$fontFamilyTitre : Staatliches, arial;
+
+// Tailles de typographiques
+
+$fontSizeH1 : 56pt;
+$fontSizeH2 : 40pt;
+$fontSizeText : 14pt;
+$fontSizeNav : 16pt;
+
+// Les couleurs
+
+$gris: #F4F4F4;
+$blanc: white;
+$bleuFonce : #4C14E9;
+$bleuClair: #398DEF;
+$noir : #000000;
+$rouge: #EB3E3E;
+$orange: #F47E3C;
+$jaune : #FDDC2F;
+$vert : #34A853;
+$violet: #8318C7;
+$degradeVioletBleu : "linear-gradient(90deg, rgba(198,40,174,1) 0%, rgba(76,20,233,1) 100%)";
+$degradeJauneRouge : "inear-gradient(90deg, rgba(243,225,56,1) 8%, rgba(235,145,62,1) 55%, rgba(233,52,52,1) 100%)";
+$degradeBleuRoseRouge : "linear-gradient(90deg, rgba(28,212,252,1) 0%, rgba(198,40,174,1) 44%, rgba(232,25,25,1) 100%)";
+
