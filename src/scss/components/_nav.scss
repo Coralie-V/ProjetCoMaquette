@@ -14,7 +14,7 @@ body{
     &__list{
         padding: 1.5em 3em;
         font-family: $fontFamilyText;
-
+        cursor: pointer;
         &:hover{
             border-bottom: $bleuFonce 3px solid;
         }
