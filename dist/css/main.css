@@ -25,7 +25,7 @@ body {
 }
 .nav__list {
   padding: 1.5em 3em;
-  font-family: outfit;
+  font-family: Outfit, arial;
 }
 .nav__list:hover {
   border-bottom: #4C14E9 3px solid;
