@@ -6,6 +6,7 @@ a {
 
 .--login {
   background-color: $bleuFonce;
+  border-bottom: 2px solid $bleuFonce !important;
   a {
     color: $blanc !important;
   }
@@ -45,7 +46,6 @@ span.nav__icon__line {
   a {
     text-decoration: none;
     color: inherit;
-    text-transform: uppercase;
   }
 
   .nav__group {
@@ -57,11 +57,16 @@ span.nav__icon__line {
     margin-bottom: 0px;
 
     .nav__list {
+      transition: 0.1s;
+      border-bottom: 2px solid $blanc;
       a {
         margin: 0.2rem;
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 1rem;
         transition: 0.2s;
         color: $noir;
+      }
+      &:hover {
+        border-bottom: 2px solid $bleuFonce;
       }
     }
   }
@@ -197,7 +202,7 @@ span.nav__icon__line {
 
       .nav__icon__line {
         background: #272727;
-        animati@on: openMid 0.8s forwards;
+        animation: openMid 0.8s forwards;
 
         &::before {
           background: #272727;
@@ -212,6 +217,7 @@ span.nav__icon__line {
   }
   .--login {
     background-color: #fff;
+
     #--login {
       background-color: $bleuFonce;
       color: $blanc !important;
