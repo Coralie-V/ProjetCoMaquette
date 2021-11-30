@@ -68,6 +68,23 @@ h1, h2, h3 {
 
 a #logo {
   width: 10rem;
+form {
+  justify-content: center;
+  display: flex;
+}
+form .section {
+  display: flex;
+  flex-direction: column;
+}
+form .section__label {
+  font-family: "Outfit", sans-serif;
+}
+form .section__input {
+  border: red 3px solid;
+}
+
+body {
+  margin: 0;
 }
 
 .--login {
