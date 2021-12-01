@@ -1,24 +1,217 @@
 body {
   margin: 0;
 }
+
+.--login {
+  background-color: $bleuFonce;
+  border-bottom: 2px solid $bleuFonce !important;
+  a {
+    color: $blanc !important;
+  }
+}
+
+li.nav__list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+span.nav__icon__line {
+  display: none !important;
+}
+.hero {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  color: #fff;
+}
+
 .nav {
   background-color: white;
 
-  &__group {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+  z-index: 1;
+  transition: 0.4s ease-out;
+  background: #fff;
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
-    &__list{
-        padding: 1.5em 3em;
-        font-family: $fontFamilyText;
-        cursor: pointer;
-    border-bottom: $bleuFonce 3px solid;
-        &:hover{
-            border-bottom: $bleuFonce 3px solid;
+  .nav__group {
+    margin-top: 0;
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 0px;
+
+    .nav__list {
+      transition: 0.1s;
+      border-bottom: 2px solid $blanc;
+      a {
+        margin: 0.2rem;
+        padding: 0.2rem 2.5rem;
+
+        color: $noir;
+      }
+      &:hover {
+        border-bottom: 2px solid $bleuFonce;
+      }
+    }
+  }
+
+  .nav__icon {
+    position: relative;
+    padding: 0px 20px;
+    cursor: pointer;
+    z-index: 1;
+
+    &__line {
+      display: block;
+      position: relative;
+      background: #000;
+      height: 2px;
+      width: 20px;
+      border-radius: 4px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        background: #000;
+        transition: background 0.8s ease;
+      }
+
+      &::before {
+        transform: translateY(-5px);
+      }
+
+      &::after {
+        transform: translateY(5px);
+      }
+    }
+  }
+
+  .nav__btn {
+    display: none;
+  }
+
+  &.scrolled {
+    color: #fff;
+
+    .nav__icon {
+      &__line,
+      &__line::before,
+      &__line::after {
+        background: #272727;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  span.nav__icon__line {
+    display: block !important;
+  }
+  .nav {
+    a {
+      display: block;
+      margin: 0 auto;
+    }
+    .nav__icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100vw;
+
+      &__line {
+        animation: closedMid 0.8s backwards;
+        animation-direction: reverse;
+
+        &::before {
+          animation: closedTop 0.8s backwards;
+          animation-direction: reverse;
         }
+    }
+
+    .nav__group {
+      transition: 0.3s;
+      background-color: #fff;
+      transform: translateX(100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10rem 0;
+      width: 100vw;
+      height: 100vh;
+      font-size: 2rem;
+
+      .nav__list {
+        opacity: 0;
+        transform: translateX(100%);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        a {
+          display: block;
+          padding: 2rem 2rem;
+        }
+      }
+    }
+
+    .nav__btn:checked ~ .nav__group {
+      transform: translateX(0%);
+      opacity: 1;
+
+      .nav__list {
+        opacity: 1;
+        transform: translateX(0%);
+        transition: 0.3s;
+        transition: opacity 0.4s ease-in-out;
+        &:hover {
+          border-bottom: 2px solid $blanc;
+        }
+      }
+    }
+
+    .nav__btn:checked ~ .nav__icon {
+      border-radius: 50%;
+
+      .nav__icon__line {
+        background: #272727;
+        animation: openMid 0.8s forwards;
+
+        &::before {
+          background: #272727;
+          animation: openTop 0.8s forwards;
+        }
+        &::after {
+          background: #272727;
+          animation: openBtm 0.8s forwards;
+        }
+      }
+    }
+  }
+  .--login {
+    background-color: #fff;
+    border: 0px solid #fff !important;
+
+    #--login {
+      background-color: $bleuFonce;
+      color: $blanc !important;
     }
   }
 }

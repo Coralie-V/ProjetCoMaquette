@@ -1,30 +1,32 @@
-
-
 // Les typographies
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
-$fontFamilyText: 'Outfit', sans-serif;
-$fontFamilyTitre: 'Staatliches', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
+$fontFamilyText: "Outfit", sans-serif;
+$fontFamilyTitre: "Staatliches", sans-serif;
 
 // Tailles de typographiques desktop
 
-$fontSizeH1: 56px;
-$fontSizeH2: 40px;
-$fontSizeText: 14px;
+$fontSizeH1: 2.7rem;
+$fontSizeH2: 2.2rem;
+$fontSizeText: 1.3rem;
 $fontSizeNav: 16px;
+
+a {
+  font-family: $fontFamilyText;
+}
 
 // Les couleurs
 
-$grisclair: #F4F4F4;
-$gris :rgb(134, 134, 134);
+$grisclair: #f4f4f4;
+$gris: rgb(134, 134, 134);
 $blanc: white;
-$bleuFonce : #4C14E9;
-$bleuClair: #398DEF;
-$noir : #000000;
-$rouge: #EB3E3E;
-$orange: #F47E3C;
-$jaune : #FDDC2F;
-$vert : #34A853;
+$bleuFonce: #4c14e9;
+$bleuClair: #398def;
+$noir: #000000;
+$rouge: #eb3e3e;
+$orange: #f47e3c;
+$jaune: #fddc2f;
+$vert: #34a853;
 $violet: #8418c7;
 $violetfonce : #591e7e;
 $degradeVioletBleu : linear-gradient(0deg, rgba(198,40,174,1) 0%, rgba(76,20,233,1) 100%);
