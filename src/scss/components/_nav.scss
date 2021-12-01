@@ -73,7 +73,7 @@ span.nav__icon__line {
 
   .nav__icon {
     position: relative;
-    padding: 26px 10px;
+    padding: 0px 20px;
     cursor: pointer;
     z-index: 1;
 
@@ -123,7 +123,7 @@ span.nav__icon__line {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   span.nav__icon__line {
     display: block !important;
   }
