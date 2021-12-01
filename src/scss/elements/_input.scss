@@ -1,0 +1,19 @@
+form{
+    justify-content: center;
+    display:flex;
+    
+    .section{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .section__label{
+        font-family: $fontFamilyText;
+    }
+
+    .section__input{
+        border: red 3px solid;
+    }
+
+   
+}
