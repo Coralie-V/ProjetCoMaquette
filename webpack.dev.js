@@ -15,6 +15,12 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/index.html"),
+      filename: "index.html",
+      minify: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/contact.html"),
+      filename: "contact.html",
       minify: true,
     }),
     require("autoprefixer"),
