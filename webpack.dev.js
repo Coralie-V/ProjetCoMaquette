@@ -19,11 +19,20 @@ module.exports = {
       minify: true,
     }),
     new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/personnaliser.html"),
+      filename: "personnaliser.html",
+      minify: true,
+    }),
+    new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/contact.html"),
       filename: "contact.html",
       minify: true,
     }),
-    require("autoprefixer"),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/inspirations.html"),
+      filename: "inspirations.html",
+      minify: true,
+    }),
   ],
   module: {
     rules: [
