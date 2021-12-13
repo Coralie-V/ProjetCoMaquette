@@ -12,10 +12,12 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin(),
+
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/index.html"),
       minify: true,
     }),
+    require("autoprefixer"),
   ],
   module: {
     rules: [
@@ -33,6 +35,7 @@ module.exports = {
           "css-loader",
           // Compiles Sass to CSS
           "sass-loader",
+          "postcss-loader",
         ],
       },
       //chargement des images
