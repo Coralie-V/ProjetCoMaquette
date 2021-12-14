@@ -1,5 +1,7 @@
-body {
-  margin: 0;
+a {
+  #logo {
+    width: 10rem;
+  }
 }
 
 .--login {
@@ -30,7 +32,12 @@ span.nav__icon__line {
 }
 
 .nav {
-  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
 
   z-index: 1;
   transition: 0.4s ease-out;
@@ -139,9 +146,13 @@ span.nav__icon__line {
           animation: closedTop 0.8s backwards;
           animation-direction: reverse;
         }
-        
+        &::after {
+          animation: closedBtm 0.8s backwards;
+          animation-direction: reverse;
+        }
       }
     }
+
     .nav__group {
       transition: 0.3s;
       background-color: #fff;
@@ -217,8 +228,63 @@ span.nav__icon__line {
   }
 }
 
-.nav__list.--login {
-  background-color: $bleuFonce;
-  color: $blanc;
-  border-bottom: $bleuFonce 3px solid;
+@keyframes openTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes closedTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes openMid {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes closedMid {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes openBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes closedBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
 }
