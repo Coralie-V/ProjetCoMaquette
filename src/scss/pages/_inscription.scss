@@ -1,0 +1,29 @@
+form{
+    .formulaire__newsletter{
+        display: flex;
+        width: fit-content;
+        label{
+            margin-left : 1em;
+            margin-top: 1em;
+              
+            
+        }
+
+    }
+}
+@media screen and (max-width: 540px) {
+    form 
+    {
+        .formulaire__newsletter{
+            label{
+                width: fit-content;
+            }
+        }
+        .input__checkbox.-new{
+            width: 1.5em;
+        }
+    }
+    
+    
+
+}
