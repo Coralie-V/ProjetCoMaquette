@@ -33,6 +33,11 @@ module.exports = {
       filename: "inspirations.html",
       minify: true,
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/profil.html"),
+      filename: "profil.html",
+      minify: true,
+    }),
   ],
   module: {
     rules: [
