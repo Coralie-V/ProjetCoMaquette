@@ -139,8 +139,9 @@ span.nav__icon__line {
           animation: closedTop 0.8s backwards;
           animation-direction: reverse;
         }
+        
+      }
     }
-
     .nav__group {
       transition: 0.3s;
       background-color: #fff;
@@ -215,6 +216,7 @@ span.nav__icon__line {
     }
   }
 }
+
 .nav__list.--login {
   background-color: $bleuFonce;
   color: $blanc;
