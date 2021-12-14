@@ -1,0 +1,30 @@
+h2{
+    text-align: center;
+    margin-top:40px;
+}
+
+.precommande{
+    display:flex;
+    flex-direction: row;
+    background-color: $grisclair;
+    margin-top:3%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom:5%;
+}
+
+.precommande_info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:auto;
+}
+
+
+@media (max-width: 768px) {
+    .precommande{
+        
+        flex-direction: column;
+        
+        
+    }
+  }

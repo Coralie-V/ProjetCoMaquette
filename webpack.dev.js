@@ -34,6 +34,11 @@ module.exports = {
       minify: true,
     }),
     new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/profil.html"),
+      filename: "profil.html",
+      minify: true,
+    }),
+    new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/connexion.html"),
       filename: "connexion.html",
       minify: true,
