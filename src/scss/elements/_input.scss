@@ -19,7 +19,7 @@ form{
         flex-direction: column;
         width: 25vw;
         &.-contact{
-            width: 50%;
+            width: fit-content;
         }
     }
 
