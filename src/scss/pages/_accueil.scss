@@ -11,7 +11,7 @@
     margin-top:5%;
     
     p{
-        padding-top:100px
+        padding-top:100px;
 
     }
 }
@@ -26,14 +26,15 @@
         flex-direction: column;
     
         p{
-            padding-top:20px
+            padding-top:20px;
+            order: 2;
     
         }
 
         .histoire_chaussure_II{
             display: block;
             margin-left: auto;
-            margin-right: auto 
+            margin-right: auto ;
         }
 
     }

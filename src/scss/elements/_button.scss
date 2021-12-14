@@ -2,14 +2,13 @@
 //Pour mettre un bouton avec une border en dégradé :
 // <button class="input-nav"><span>Texte</span></button>
 
-.header__shoe {
-  button {
-    @include btn;
-  }
-  button::after {
-    @include btnAfter;
-  }
+.button__form {
+  @include btn;
 }
+.button__form::after {
+  @include btnAfter;
+}
+
 
 .input-nav.-orange {
   
@@ -27,7 +26,7 @@
   margin-bottom: 2em;
 }
 
-.input-nav.-decouvrir {
+.button__form.-decouvrir {
   background: $violet;
   padding: 1px;
   span {
@@ -38,9 +37,7 @@
     }
   }
 }
-.input-nav.-centrer{
-    margin-top: 3em;
-    margin-left: auto;
-   margin-right: auto;
-   display: block;
+.button__form.-centrer{
+  margin:3em auto 1em !important;
+  display: block;
 }
