@@ -2,10 +2,10 @@
 //Pour mettre un bouton avec une border en dégradé :
 // <button class="input-nav"><span>Texte</span></button>
 
-button {
+.button__form {
   @include btn;
 }
-button::after {
+.button__form::after {
   @include btnAfter;
 }
 
@@ -18,7 +18,7 @@ button::after {
   }
 }
 
-.input-nav.-decouvrir {
+.button__form.-decouvrir {
   background: $violet;
   padding: 1px;
   span {
@@ -29,7 +29,7 @@ button::after {
     }
   }
 }
-.input-nav.-centrer{
+.button__form.-centrer{
   margin:3em auto 1em !important;
   display: block;
 }
