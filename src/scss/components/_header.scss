@@ -2,6 +2,7 @@ header {
   background-image: url("./../images/header-bcg.jpg");
   height: 100vh;
   background-size: cover;
+  position: sticky;
   background-position: center;
   .header_chapo {
     padding: 0 5rem;
@@ -33,26 +34,6 @@ header {
   p:nth-of-type(2) {
     font-size: 2rem;
   }
-}
-
-h1#titre_h1 {
-  font-family: $fontFamilyTitre;
-  font-weight: normal;
-  text-align: center;
-  margin: 0px 10px;
-}
-
-#titre_page {
-  display: flex;
-  align-items: center;
-  padding-top: 8rem;
-  justify-content: center;
-}
-
-.trait_titre_h1 {
-  height: 1px;
-  width: 50px;
-  background-color: #000;
 }
 
 .header__img {

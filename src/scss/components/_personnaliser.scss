@@ -1,12 +1,27 @@
 #block_personnaliser {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 #personnaliser {
   display: flex;
 }
 
+#liens {
+  margin: 3rem 1rem;
+  display: block;
+  a {
+    margin: 0px 20px;
+    text-decoration: none;
+  }
+  button {
+    @include btn;
+  }
+  button::after {
+    @include btnAfter;
+  }
+}
 .filtre {
   display: flex;
   .col_coleurs {
@@ -15,10 +30,35 @@
       display: flex;
       li {
         margin-left: 1rem;
-        width: 10px;
-        height: 10px;
-        background-color: red;
+        width: 20px;
+        height: 20px;
+        background-color: $rouge;
         border-radius: 50%;
+      }
+      li:first-child {
+        background-color: $blanc;
+        border: 1px solid $gris;
+      }
+      li:nth-child(2) {
+        background-color: $gris;
+      }
+      li:nth-child(3) {
+        background-color: $rouge;
+      }
+      li:nth-child(4) {
+        background-color: $orange;
+      }
+      li:nth-child(5) {
+        background-color: $jaune;
+      }
+      li:nth-child(6) {
+        background-color: $vert;
+      }
+      li:nth-child(7) {
+        background-color: $bleuFonce;
+      }
+      li:nth-child(8) {
+        background-color: $violet;
       }
     }
   }
