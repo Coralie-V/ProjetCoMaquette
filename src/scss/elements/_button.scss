@@ -3,6 +3,8 @@
 // <button class="input-nav"><span>Texte</span></button>
 
 .button__form {
+  font-size: $fontSizeNav;
+  font-weight: bold;
   @include btn;
 }
 .button__form::after {
@@ -10,8 +12,9 @@
 }
 
 
-.input-nav.-orange {
-  
+.-orange {
+  font-size: $fontSizeNav;
+  font-weight: bold;
   @include btnOrange;
   span {
     display: flex;
@@ -37,7 +40,7 @@
     }
   }
 }
-.button__form.-centrer{
+.-centrer{
   margin:3em auto 1em !important;
   display: block;
 }
