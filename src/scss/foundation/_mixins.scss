@@ -6,6 +6,12 @@
   border-radius: 50px;
   background-clip: padding-box;
   background-color: $blanc;
+  font-family: $fontFamilyText;
+
+  &:hover{
+    background: $degradeVioletBleu;
+    color: $blanc;
+  }
 }
 
 @mixin btnAfter {
