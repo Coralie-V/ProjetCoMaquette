@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Staatliches", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  background-color: white;
+}
+.nav__group {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__list {
+  padding: 1.5em 3em;
+  font-family: Outfit, arial;
+  border-bottom: #4C14E9 3px solid;
+  cursor: pointer;
+}
+.nav__list:hover {
+  border-bottom: #4c14e9 3px solid;
+}
+
+.nav__list.--login {
+  background-color: #4c14e9;
+  color: white;
+  border-bottom: #4c14e9 3px solid;
+}
+
+.header__imgbcg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  top: 71px;
+  object-fit: cover;
+  left: 0;
+}
+.header__chapo {
+  position: relative;
+  z-index: 2;
+  top: 1rem;
+  left: 5rem;
+}
+.header__chapo h1 {
+  width: 350px;
+}
+.header__chaussure {
+  position: relative;
+  z-index: 3;
+}
+.header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: normal;
+}
+.header p {
+  font-family: "Outfit", sans-serif;
+}
+.header h1, .header p {
+  color: white;
+}
+.header p:nth-of-type(2) {
+  font-size: 2rem;
+}
+
+footer {
+  background-color: #000000;
+  width: 100%;
+  padding-bottom: 10px;
+}
+footer .footer__group {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer a {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+footer .footer__group.-reseau {
+  justify-content: center;
+}
+footer .footer__list.-reseau {
+  padding-left: 45px;
+}
+
+@media (max-width: 768px) {
+  footer .footer__group {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer__list {
+    padding-top: 18px;
+  }
+  footer .footer__group.-reseau {
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .footer__list.-reseau {
+    padding-left: 18px;
+  }
+}

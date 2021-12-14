@@ -1,3 +1,82 @@
+#block_personnaliser {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 #personnaliser {
   display: flex;
+}
+
+.filtre {
+  display: flex;
+  .col_coleurs {
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin-left: 1rem;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+#taille_chaussure {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  div {
+    height: 2rem;
+    width: 2rem;
+    button {
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+      border-width: 3px;
+      background-color: #fff;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div8 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.div9 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div10 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div11 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.div12 {
+  grid-area: 3 / 4 / 4 / 5;
 }
