@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>contact</title>
+    <title>Inscription</title>
 </head>
 <body>
 
@@ -27,49 +26,42 @@
     </nav>
            
 <section class="container">
-    <h1 class="h1">contact</h1>
+    <h1 class="h1">inscription</h1>
     <form>
-        <div class="formulaire -contact">
-            <div class="formulaire__grid">
-                <div class="grid__item">
-                    <label class="formulaire__label" for="prenom">Prénom</label>
-                    <span class="formulaire__input"><input  type="text" name="prenom"></span>
-                </div>
-                <div class="grid__item">
-                    <label class="formulaire__label" for="nom">Nom</label>
-                    <span class="formulaire__input"><input type="text" name="nom"></span>
-                </div>
-                <div class="grid__item">
-                    <label class="formulaire__label" for="email">Email</label>
-                    <span class="formulaire__input"><input type="email" name="email"></span>
-                </div>
-                <div class="grid__item">
-                    <label for="sujet" class="formulaire__label">Sujet</label>
-                    <span class="formulaire__input">
-                        <select name="sujet">
-                            <option value=""></option>
-                            <option value="prob_comm">Problème avec une commande</option>
-                            <option value="prob_tech">Problème technique</option>
-                            <option value="info">Demande d'information</option>
-                            <option value="autre">Autre</option>
-                        </select>
-                    </span>
-                </div>
-            </div>
-             
-            <div class="formulaire__message">
-                <label for="message" class="formulaire__label">Message</label>
-                <span class="formulaire__input -message">
-                    <textarea name="message" id="" cols="30" rows="7">écrire un message ...</textarea>
-                </span>
-           </div>
-            
+        <div class="formulaire">
+            <label class="formulaire__label" for="prenom">Prénom</label>
+            <span class="formulaire__input"><input  type="text" name="prenom"></span>
+            <label class="formulaire__label" for="nom">Nom</label>
+            <span class="formulaire__input"><input type="text" name="nom"></span>
+            <label class="formulaire__label" for="email">Email</label>
+            <span class="formulaire__input"><input type="email" name="email"></span>
+            <label class="formulaire__label" for="naissance">Date de naissance</label>
+            <span class="formulaire__input"><input type="text" name="naissance"></span>
+            <label class="formulaire__label" for="username">Nom d'utilisateur</label>
+            <span class="formulaire__input"><input type="text" name="username"></span>
+            <label class="formulaire__label" for="mdp">Mot de passe</label>
+            <span class="formulaire__input"><input type="password" name="mot de passe"></span>
+            <label class="formulaire__label" for="ConfirmMdp">Confirmation du mot de passe</label>
+            <span class="formulaire__input"><input type="password" name="ConfirmMdp"></span>
 
-            
+            <div class="formulaire__newsletter"> 
+                <span class="formulaire__input -checkbox">
+                    <input type="checkbox" name="newsletter">
+                    <span class="input__checkbox -new">
+                        <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.88892 12.8888L7.81755 19.496C8.21408 20.0276 9.00878 20.033 9.41248 19.5068L22.3334 2.66663" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                </span>
+                <label for="newsletter" class="formulaire__label">S’inscrire à la newsletter et recevoir les nouveautés concernant les produits de la marque par mail</label>
+           </div>
+            <label for="condition général" class="formulaire__label -condition">En créant un compte, vous acceptez les conditions générales d’utilisation ainsi que les politiques de confidentialités
+            </label>
             
         </div>
     </form>
-    <button class="input-nav -centrer"><span>Envoyer</span></button>
+    <button class="input-nav -centrer"><span>S'inscrire</span></button>
+
 </section>
 
 <footer>

@@ -14,6 +14,124 @@ form{
     .section__input{
         border: red 3px solid;
     }
+    .formulaire{
+        display:flex;
+        flex-direction: column;
+        width: 25vw;
+        &.-contact{
+            width: 50%;
+        }
+    }
+
+    .formulaire__label{
+        font-family: $fontFamilyText;
+        width: 20em;
+    }
+    .-condition
+    {
+        margin-top: 1em;
+    }
+
+    .formulaire__input{
+        background: $degradeVioletBleu;
+        padding: 2px;
+        width: 100%;
+        height: 2em;
+        display: inline-block;
+        margin-bottom: 0.5em;
+        input, select, textarea{
+            border : none;
+            outline: none;
+            width: 100%;
+            height:100%;
+            font-family: $fontFamilyText;
+            font-size : $fontSizeNav;
+            
+        }
+        input[type="password"]{
+            font-size: 28pt;
+        }
+        &.-checkbox{
+            margin-top: 1em;
+            width: 2em;
+            margin-right: 1em;
+            input{
+                border : 1px solid red;
+                margin: 0;
+                opacity: 0;
+                cursor: pointer;
+                position: absolute;
+                width: 2em;
+                height: 2em;
+                z-index: 2;
+                &::before{
+                    content: '';
+                    border:none;
+                }
+                &:checked::before{
+                    background: $degradeVioletBleu;
+                }
+                &:checked ~ .-new{
+                    background: $degradeVioletBleu;
+                    z-index: 1;
+                }
+            }
+        }
+        &.-message
+        {
+            height: 100%;
+            width:100%;
+            
+            textarea{
+                resize: none;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+    .input__checkbox.-new{
+        height: 1.75em;
+        width: 1.75em;
+        background: white;
+        position: absolute;
+        z-index: 1;
+        svg{
+            margin-top: 0.15em;
+        }
+   
+        
+    } 
+    .formulaire__message{
+        margin : 1em;  
+    }
+    .-groupe>span{
+        margin-bottom: -0.5em;
+        display: inline-block;
+    }
+
+    .formulaire__liens{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin-top:3em;
+        a{
+            margin-bottom:1em;
+            text-decoration: none;
+            color: $bleuClair;
+            font-family: $fontFamilyText;
+        }
+    }
+    .formulaire__newsletter{
+        display: flex;
+        label{
+            margin-left : 1em;
+            margin-top: 1em;
+            
+        }
+    }
 
    
 }
+   

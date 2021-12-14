@@ -9,6 +9,7 @@
     outline: none;
     box-shadow: 2px 3px 5px $gris;
     border-radius : 50px;
+    margin-bottom: 1em;
     span{
         background: $blanc;
         font-family: $fontFamilyText;
@@ -31,8 +32,13 @@
 {
     background: $degradeJauneRouge;
     border-radius: 0;
+    
     span{
         border-radius: 0;
+        display: flex;
+        img{
+            margin-right:1em ;
+        }
     }
     
 }
@@ -47,6 +53,12 @@
             background-color: $violetfonce;
         }
     }
+}
+.input-nav.-centrer{
+    margin-top: 3em;
+    margin-left: auto;
+   margin-right: auto;
+   display: block;
 }
 
 
