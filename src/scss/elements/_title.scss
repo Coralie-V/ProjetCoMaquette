@@ -1,12 +1,23 @@
 h1,h2,h3 {
   font-family: $fontFamilyTitre;
 }
-.h1{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  width: 100%;
-  font-size: $fontSizeH1;
+h1#titre_h1 {
+  font-family: $fontFamilyTitre;
+  font-weight: normal;
   text-align: center;
-  
+  margin: 0px 10px;
+  font-size: $fontSizeH1;
+}
+
+#titre_page {
+  display: flex;
+  align-items: center;
+  padding-top: 8rem;
+  justify-content: center;
+}
+
+.trait_titre_h1 {
+  height: 1px;
+  width: 50px;
+  background-color: #000;
 }
