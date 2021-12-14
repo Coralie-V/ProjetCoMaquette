@@ -37,8 +37,7 @@ span.nav__icon__line {
   justify-content: space-between;
   align-items: center;
   height: 65px;
-  width: 100vw;
-
+  width: 100%;
   z-index: 1;
   transition: 0.4s ease-out;
   background: #fff;
@@ -123,7 +122,7 @@ span.nav__icon__line {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 990px) {
   span.nav__icon__line {
     display: block !important;
   }

@@ -18,7 +18,7 @@ form{
         display:flex;
         flex-direction: column;
         &.-contact{
-            width: 50%;
+            width: fit-content;
         }
     }
 
