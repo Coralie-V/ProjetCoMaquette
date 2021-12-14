@@ -28,6 +28,11 @@ module.exports = {
       filename: "contact.html",
       minify: true,
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/inspirations.html"),
+      filename: "inspirations.html",
+      minify: true,
+    }),
   ],
   module: {
     rules: [

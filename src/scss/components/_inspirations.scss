@@ -1,0 +1,25 @@
+div.inspirations .inspirations__img{
+    width: 15vw ;
+  
+}
+div.inspirations div.inspirations__block{
+    display: inline-block;
+    border: solid 2px lightgray;
+    padding: 3em 1em;
+    margin: 1em;
+    background-color:lightgray;
+
+}
+
+div.inspirations div.inspirations__block div{
+    display: flex;
+    justify-content: center;
+}
+
+div.inspirations div.inspirations__block p{
+    display: table-cell;
+    padding: 1rem;
+}
+section.container{
+    padding-top: 5rem;
+}
