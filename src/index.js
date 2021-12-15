@@ -65,3 +65,4 @@ function maFonctionAuClick(event){
     })
     event.target.classList.add("-active");
 }
+

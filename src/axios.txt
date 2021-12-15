@@ -1,0 +1,44 @@
+
+
+var axios = require("axios");
+
+
+
+////////////////////////// AXIOS ///////////////////////
+
+
+
+axios.get("http://localhost/wordpressinteco/wp-json/wp/v2/chaussures")
+.then(function(response){
+    let chaussures = response.data
+    chaussures.forEach(function(chaussure){
+        //date modif
+        console.log(chaussure.date)
+
+        // titre 
+        console.log(chaussure.title.rendered)
+
+        //marque
+        console.log(chaussure.marque_chaussure)
+        chaussure.marque_chaussure.forEach(function(id){
+            getMarque(id)
+        })
+
+    })
+    console.log(response)
+})
+.catch(function(error){
+    console.log(error)
+})
+
+function getMarque(id){
+    axios.get("http://localhost/wordpressinteco/wp-json/wp/v2/marque_chaussure/" + id)
+    .then(function(response){
+        console.log(response.data.name)
+    })
+    .catch(function(error){
+        console.log(error)
+    })
+}
+
+getMarque(2)
